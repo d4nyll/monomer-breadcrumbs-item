@@ -1,0 +1,47 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="monomer-breadcrumbs-item">
+  <template>
+    <style>
+      :host {
+        position: relative;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 40px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      #arrow {
+        position: absolute;
+        top: 0;
+        right: -10px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left-width: 10px;
+        border-left-style: solid;
+        border-bottom: 20px solid transparent;
+      }
+    </style>
+    <div id="main">[[text]]<div id="arrow"></div></div>
+  </template>
+  <script>
+    Polymer({
+      is: 'monomer-breadcrumbs-item',
+      properties: {
+        text: String,
+        color: String,
+        order: Number,
+      },
+      ready: function () {
+        this.style.backgroundColor = this.color;
+        this.style.order = this.order;
+        this.$.arrow.style.borderLeftColor = this.color;
+      }
+    });
+  </script>
+</dom-module>

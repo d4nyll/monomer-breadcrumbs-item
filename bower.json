@@ -1,0 +1,29 @@
+{
+  "name": "monomer-breadcrumbs-item",
+  "authors": [
+    "Daniel Li <dan@danyll.com>"
+  ],
+  "description": "Polymer component to be used inside monomer-breadcrumb",
+  "main": "monomer-breadcrumbs-item.html",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:d4nyll/monomer-breadcrumbs-item.git"
+  },
+  "keywords": [
+    "polymer",
+    "breadcrumbs"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "promise-polyfill": "polymerlabs/promise-polyfill#^1.0.0",
+    "polymer": "Polymer/polymer#^1.8.0"
+  }
+}
