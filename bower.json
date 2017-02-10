@@ -10,6 +10,7 @@
     "url": "git@github.com:d4nyll/monomer-breadcrumbs-item.git"
   },
   "keywords": [
+    "web-components",
     "polymer",
     "breadcrumbs"
   ],
